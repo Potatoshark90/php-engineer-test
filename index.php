@@ -40,6 +40,8 @@ use FlickerLeap\Rectangle;
 
         <?php
             // output your diamond here
+            $diamond = new Diamond(10);
+            $diamond->draw();
         ?>
 
         <h2>Output your rectangle</h2>
