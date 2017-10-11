@@ -56,6 +56,26 @@ use FlickerLeap\Rectangle;
 
         <?php
             // Use the Httpful client to output the API results here.
+            $uri = "https://pokeapi.co/api/v2/pokemon/mewtwo/";
+            $response = \Httpful\Request::get($uri)->send();
+
+            $image = $response->body->sprites->front_default;
+            $index = $response->body->id;
+            $name =  ucfirst($response->body->name);
+
+            echo "
+            <table cellpadding='5'>
+                <tr>
+                    <th>Image</th>
+                    <th>Index</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td><img src='$image'/></td>
+                    <td>$index</td>
+                    <td>$name</td>
+                </tr>
+            </table>";
         ?>
 
         <h2>Recommendations</h2>
