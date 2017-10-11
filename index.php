@@ -80,7 +80,7 @@ use FlickerLeap\Rectangle;
 
         <h2>Recommendations</h2>
 
-        <p><!-- Let us know how we can improve this test here --></p>
+        <p>Include an image of the output needed for the shapes.</p>
 
     </body>
 </html>
