@@ -81,6 +81,7 @@ use FlickerLeap\Rectangle;
         <h2>Recommendations</h2>
 
         <p>Include an image of the output needed for the shapes.</p>
+        <p>Include a test for working with arrays.</p>
 
     </body>
 </html>
